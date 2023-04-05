@@ -1,0 +1,166 @@
+body {
+    max-width: max-content;
+    min-width: 650px;
+    padding: 5px;
+    margin: auto;
+    background-color: beige;
+}
+
+header {
+    padding: 5px 5px 5px 5px;
+}
+
+ul a {
+    color: beige;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    li {
+    display: inline-block;
+    height: 20px;
+    width: 180px;
+    padding: 10px 12px 10px 12px;
+    margin: -3px;
+    text-align: center;
+    
+    background-color: olive;
+    }
+
+    li:hover {
+    background-color: olivedrab;
+    border-style: none;
+    }
+
+    li:active {
+        background-color: darkolivegreen;
+        border-style: none;
+    }
+
+    .disabled {
+        background-color: darkolivegreen;
+        pointer-events: none;
+    
+    }
+
+    footer {
+        inline-size: 608px;
+        height: 20px;
+        padding: 5px 5px 5px 5px;
+        margin: 80px 0px 0px 0px;
+        background-color: olive;
+        color: beige;
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: medium;
+        font-weight: 400;
+    }
+
+    h1 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 400;
+        max-width: 608px;
+        text-align: center;
+        padding-top: 30px;
+        color: darkolivegreen;
+    }
+    
+    h5 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 400;
+        text-align: center;
+    }
+    
+    #p1 {
+        width: 550px;
+        margin: 0px 29px 0px 34px;
+        text-align: justify;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 100;
+        color: black;
+        background-color: beige
+    }
+
+    #img01 {
+        margin: 40px 29px 0px 29px;
+        padding-left: 5px;
+    }
+
+    #tbl1 {
+        width: 550px;
+        margin: 40px 29px 0px 60px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 100;
+        background-color: beige
+    }
+
+    th {
+        text-align: left;
+        font-weight: 500;
+        color: darkolivegreen;
+    }
+
+    form {
+        display: block;
+        width: 550px;
+        height: 300px;
+        margin: 0px 29px 0px 35px;
+    }
+
+    input[type="text"] {   
+        margin: 20px 3px 0px 0px;
+        padding: 2px;
+        width: 270px;
+        box-sizing: border-box;
+        border-width: 1.5px;
+        border-color: darkolivegreen;
+        background-color: rgb(244, 244, 228);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 17px;
+    }
+
+    input[type="email"] {   
+        margin-top: 20px;
+        padding: 2px;
+        width: 547px;
+        box-sizing: border-box;
+        border-width: 1.5px;
+        border-color: darkolivegreen;
+        background-color: rgb(244, 244, 228);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 17px;
+    }
+
+    textarea {
+        margin-top: 20px;
+        width: 547px;
+        min-height: 100px;
+        box-sizing: border-box;
+        border-width: 1px;
+        border-color: darkolivegreen;
+        background-color: rgb(244, 244, 228);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 17px;
+    } 
+    
+    button {   
+        margin: 20px 125px 0px 150px;
+        padding: 3px;
+        width: 250px;
+        box-sizing: border-box;
+        border-width: 1px;
+        border-color: darkolivegreen;
+
+        color: beige;
+        background-color: olive;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: medium;
+    }
+
+    button:hover {
+        background-color: olivedrab;
+    }
+
+    button:active {
+        background-color: darkolivegreen;
+    }

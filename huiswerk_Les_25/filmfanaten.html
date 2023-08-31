@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fop film enquete</title>
+    <!-- Java script -->
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js">
+    </script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+    $("#knop").click(function() {
+    var regisseur = $("#idTekstveld1").val();
+    var film = $("#idTekstveld2").val();
+    var acteur = $("#idTekstveld3").val();
+    var tijden = $("#idTekstveld4").val();
+    window.alert(
+        "Sorry, maar " + regisseur + 
+        " is zeker niet de beste regisseur en " + acteur + 
+        " kan amper acteren. Wat betreft " + film +
+        " is deze zeker niet de beste film maar eerder de slechtste. Zeker net zo slecht als " + tijden +
+        ". Vul het formulier a.u.b. opnieuw in!"
+        );
+    });
+    });
+    </script> 
+    <style>
+    [class*="col-"] {
+    width: 100%;
+    }
+    @media only screen and (min-width: 768px) {
+    [class*="col-"] {
+    float: none;
+    padding: 15px;
+    }  
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;} 
+    }
+    #content {
+        margin-top: 20px;
+        text-align: center;    
+    }
+    body {
+        background-color: rgba(4, 4, 4, 0.9);  
+    }
+
+    header {
+        display: inline-block;
+        width: 100%;
+        height: 250px;
+        background: url("https://i.ytimg.com/vi/QUQlgKFMM2o/maxresdefault.jpg");
+        background-position: center;
+        background-size: calc(115%);
+        text-align: center;
+        padding-top: 5px;
+        font-family: fantasy;
+        font-size: 104px;
+        font-weight: bold;
+        color: aliceblue;
+        text-shadow: 4px 0 0 darkred, 0 -4px 0 darkred, 0 4px 0 darkred, -4px 0 0 darkred;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        overflow: hidden;
+    }
+
+    #mid {
+        width: 100%;
+        background-color: rgba(250, 235, 215, .7);
+        text-align: center;
+        display: inline-block;     
+    }
+    .mid2 {
+        width: 75%;
+    }
+    h1 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    p {
+        font-size: x-large;
+        text-align: justify;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .formtitle {
+            margin-left: 5px; 
+            font-size: x-large;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 600; 
+            padding-bottom: 20px;
+        }
+        form {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        width: 600px;
+        height: 300px;
+        padding: 30px 10px 0px 40px;
+        background-color: rgba(250, 235, 215, .7);
+        align-items: center;
+        
+        }
+
+    .td1 { 
+        padding: 5px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 500;
+        font-size: larger;
+    }
+
+    .td2 { 
+        padding-left: 20px;
+    }
+
+    #knop {
+        margin-left: 20%;
+        margin-top: 20px;
+        font-size: large;
+    }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <header>Filmfanaten</header>
+        <section id="mid">
+           <div><h1>Beste Filmfanaten</h1>  
+                 <div class="mid2"></div> 
+                    <p class="col-8"> Doe mee aan onze enquête. <br>
+                        Laat ons weten wie u favorieten zijn aller tijden door de vragenlijst in 
+                        te vullen en kom in aanmerking voor leuke prijzen
+                    </p>
+                </div>
+        </section>
+    </div>
+    <form>
+        <Table>
+            <tbody>
+                <tr>
+                <td class="formtitle" colspan="2">Vragenlijst</td>
+            </tr>
+                <tr>
+                    <td class="td1">Wie is u favoriete regisseur?</td>
+                    <td class="td2"><input type="text" id="idTekstveld1"></td>
+                </tr>
+                <tr>
+                    <td class="td1">Wat is u favoriete film?</td>
+                    <td class="td2"><input type="text" id="idTekstveld2"></td>
+                </tr>
+                <tr>
+                    <td class="td1">Wie is u favoriete acteur?</td>
+                    <td class="td2"><input type="text" id="idTekstveld3"></td>
+                </tr>
+                <tr>
+                    <td class="td1">Welke is de slechtste film aller tijden?</td>
+                    <td class="td2"><input type="text" id="idTekstveld4"></td>
+                </tr>
+                <tr>
+                <td colspan="2"><input id="knop" name="knop" type="button"
+                value="Send"></td>
+                </tr>
+            </tbody>
+        </Table>
+    </form>
+        <noscript>
+        Om deze website optimaal te gebruiken is het noodzakelijk om JavaScript te activeren.
+        </noscript>
+       <!--  javascript einde -->
+    
+</body>
+</html>
